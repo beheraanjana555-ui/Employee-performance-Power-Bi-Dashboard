@@ -63,19 +63,3 @@ Section 5 of the report tags each one explicitly:
 
 This distinction matters more than any single number in the report — it's
 the difference between a report you can act on and one you can only skim.
-
-## Reproducing this report
-
-```bash
-pip install reportlab matplotlib --break-system-packages
-python3 make_charts.py   # generates the four chart PNGs
-python3 build_pdf.py     # assembles report.pdf from the charts + narrative
-```
-
-## Suggested next iteration
-
-If the underlying Power BI dataset (or a data export of the full 160-row
-table) becomes available, re-run this analysis against real row-level data
-to replace every "Estimated" row in Section 5 with an exact figure, and to
-resolve the two open questions about the April drop-off and the
-Clients Assigned vs. Clients Served discrepancy.
